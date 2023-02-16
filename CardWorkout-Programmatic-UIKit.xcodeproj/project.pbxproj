@@ -12,6 +12,7 @@
 		74901BB8299C9AF000EA3E8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74901BB7299C9AF000EA3E8C /* Assets.xcassets */; };
 		74901BBB299C9AF000EA3E8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74901BB9299C9AF000EA3E8C /* LaunchScreen.storyboard */; };
 		74901BC3299C9D0900EA3E8C /* CardSelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74901BC2299C9D0900EA3E8C /* CardSelectionVC.swift */; };
+		74901BE1299E62CD00EA3E8C /* CWButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74901BE0299E62CD00EA3E8C /* CWButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		74901BBA299C9AF000EA3E8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74901BBC299C9AF000EA3E8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74901BC2299C9D0900EA3E8C /* CardSelectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSelectionVC.swift; sourceTree = "<group>"; };
+		74901BE0299E62CD00EA3E8C /* CWButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				74901BAE299C9AEF00EA3E8C /* AppDelegate.swift */,
 				74901BB0299C9AEF00EA3E8C /* SceneDelegate.swift */,
+				74901BE0299E62CD00EA3E8C /* CWButton.swift */,
 				74901BC2299C9D0900EA3E8C /* CardSelectionVC.swift */,
 				74901BB7299C9AF000EA3E8C /* Assets.xcassets */,
 				74901BB9299C9AF000EA3E8C /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 				74901BAF299C9AEF00EA3E8C /* AppDelegate.swift in Sources */,
 				74901BB1299C9AEF00EA3E8C /* SceneDelegate.swift in Sources */,
 				74901BC3299C9D0900EA3E8C /* CardSelectionVC.swift in Sources */,
+				74901BE1299E62CD00EA3E8C /* CWButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
