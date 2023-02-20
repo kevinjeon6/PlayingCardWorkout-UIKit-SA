@@ -28,6 +28,9 @@ class CardSelectionVC: UIViewController {
     
     func configureUI() {
         configureCardImageView()
+        configureStopButton()
+        configureResetButton()
+        configureRulesButton()
     }
     
     
@@ -52,6 +55,53 @@ class CardSelectionVC: UIViewController {
             cardImageView.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -75)
         ])
     }
+    
+    
+    
+    // MARK: The order matters. Need to create the card image view so that you can pin the stop button to the bottom of the card image view
+    // MARK: Stop button
+    func configureStopButton() {
+        view.addSubview(stopButton)
+        //Dont need to add the TAMIC because the CWButton already has it in the configure
+        
+        //Set Constraints
+        NSLayoutConstraint.activate([
+            stopButton.widthAnchor.constraint(equalToConstant: 260),
+            stopButton.heightAnchor.constraint(equalToConstant: 50),
+            stopButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            //TopAnchor- top of the stop button. And we are pinning it to the bottom of the card image view
+            stopButton.topAnchor.constraint(equalTo: cardImageView.bottomAnchor, constant: 30)
+        ])
+    }
+    
+    
+    // MARK: Reset Button
+    func configureResetButton(){
+        view.addSubview(resetButton)
+        
+        NSLayoutConstraint.activate([
+            resetButton.widthAnchor.constraint(equalToConstant: 115),
+            resetButton.heightAnchor.constraint(equalToConstant: 50),
+            
+            //Lines up the reset button to the stop button with the anchor being leading. Meaning aligning to the leading of the stop button
+            resetButton.leadingAnchor.constraint(equalTo: stopButton.leadingAnchor),
+            resetButton.topAnchor.constraint(equalTo: stopButton.bottomAnchor, constant: 20)
+        ])
+    }
+    
+    // MARK: Rules Button
+    
+    func configureRulesButton(){
+        view.addSubview(rulesButton)
+        
+        NSLayoutConstraint.activate([
+            rulesButton.widthAnchor.constraint(equalToConstant: 115),
+            rulesButton.heightAnchor.constraint(equalToConstant: 50),
+            rulesButton.trailingAnchor.constraint(equalTo: stopButton.trailingAnchor),
+            rulesButton.topAnchor.constraint(equalTo: stopButton.bottomAnchor, constant: 20)
+        ])
+    }
+    
     
     
 
