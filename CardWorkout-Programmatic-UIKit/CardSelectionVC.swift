@@ -19,11 +19,17 @@ class CardSelectionVC: UIViewController {
     let resetButton = CWButton(backgroundColor: .systemGreen, title: "Reset")
     let rulesButton = CWButton(backgroundColor: .systemBlue, title: "Rules")
     
-
+    var cards: [UIImage] = CardDeck.allValues
+    var timer: Timer!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
         configureUI()
+        startTimer()
+        stopTimer()
+        resetTimer()
     }
     
     
@@ -34,6 +40,27 @@ class CardSelectionVC: UIViewController {
         configureResetButton()
         configureRulesButton()
     }
+    
+    
+    // MARK: - Timer logic
+    func startTimer() {
+        timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(showRandomCard), userInfo: nil, repeats: true)
+    }
+    
+    @objc func showRandomCard() {
+        cardImageView.image = cards.randomElement()
+    }
+    
+    @objc func stopTimer() {
+        timer.invalidate()
+    }
+    
+    @objc func resetTimer() {
+        stopTimer()
+        startTimer()
+    }
+    
+    
     
     
     // MARK: Things to do for card image view.
@@ -66,6 +93,8 @@ class CardSelectionVC: UIViewController {
         view.addSubview(stopButton)
         //Dont need to add the TAMIC because the CWButton already has it in the configure
         
+        stopButton.addTarget(self, action: #selector(stopTimer), for: .touchUpInside)
+        
         //Set Constraints
         NSLayoutConstraint.activate([
             stopButton.widthAnchor.constraint(equalToConstant: 260),
@@ -80,6 +109,7 @@ class CardSelectionVC: UIViewController {
     // MARK: Reset Button
     func configureResetButton(){
         view.addSubview(resetButton)
+        resetButton.addTarget(self, action: #selector(resetTimer), for: .touchUpInside)
         
         NSLayoutConstraint.activate([
             resetButton.widthAnchor.constraint(equalToConstant: 115),
@@ -111,8 +141,4 @@ class CardSelectionVC: UIViewController {
         present(RulesVC(), animated: true)
     }
     
-    
-    
-
-
 }

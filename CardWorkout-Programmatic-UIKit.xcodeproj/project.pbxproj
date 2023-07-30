@@ -14,6 +14,7 @@
 		74901BC3299C9D0900EA3E8C /* CardSelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74901BC2299C9D0900EA3E8C /* CardSelectionVC.swift */; };
 		74901BE1299E62CD00EA3E8C /* CWButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74901BE0299E62CD00EA3E8C /* CWButton.swift */; };
 		74A757A22A745C1C00F669DB /* RulesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A757A12A745C1C00F669DB /* RulesVC.swift */; };
+		74DD99E42A75DC4700328D7B /* CardDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DD99E32A75DC4700328D7B /* CardDeck.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		74901BC2299C9D0900EA3E8C /* CardSelectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSelectionVC.swift; sourceTree = "<group>"; };
 		74901BE0299E62CD00EA3E8C /* CWButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWButton.swift; sourceTree = "<group>"; };
 		74A757A12A745C1C00F669DB /* RulesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesVC.swift; sourceTree = "<group>"; };
+		74DD99E32A75DC4700328D7B /* CardDeck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDeck.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				74901BB0299C9AEF00EA3E8C /* SceneDelegate.swift */,
 				74901BE0299E62CD00EA3E8C /* CWButton.swift */,
 				74901BC2299C9D0900EA3E8C /* CardSelectionVC.swift */,
+				74DD99E32A75DC4700328D7B /* CardDeck.swift */,
 				74A757A12A745C1C00F669DB /* RulesVC.swift */,
 				74901BB7299C9AF000EA3E8C /* Assets.xcassets */,
 				74901BB9299C9AF000EA3E8C /* LaunchScreen.storyboard */,
@@ -144,6 +147,7 @@
 				74A757A22A745C1C00F669DB /* RulesVC.swift in Sources */,
 				74901BB1299C9AEF00EA3E8C /* SceneDelegate.swift in Sources */,
 				74901BC3299C9D0900EA3E8C /* CardSelectionVC.swift in Sources */,
+				74DD99E42A75DC4700328D7B /* CardDeck.swift in Sources */,
 				74901BE1299E62CD00EA3E8C /* CWButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
